@@ -1,0 +1,119 @@
+
+/* 
+    Created on : November 1, 2017, 9:14:38 PM
+    Author     : Sarah Bean
+    Stylesheet for TechTracker Project
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+
+
+body { background-color: #010a4d; font-family: 'Oswald', sans-serif; 
+       font-size: 16px; font-weight: 400; color: #000d33; }
+
+#page { width: 100%; max-width: 1024px; height: 100%; margin: 0 auto; position: relative;
+        background-color: #010a4d; box-shadow: 3px 3px 3px #D5D5D5; }
+
+
+/* Header */
+header { height: 300px; background: #010a4d url(../images/techTrackerBanner.jpg) no-repeat bottom right; 
+         position: relative;}
+
+header a.logo { position: absolute; display: block; width: 150px; height: 162px;
+                background: url(../images/techTrackerLogo.jpg) no-repeat 0 0; background-size: contain; 
+                top: 138px; left: 150px; }
+
+h1 {	font-size: 2em; font-weight: 700; font-style: italic; color: #000464;
+     text-align: right; text-shadow: 1px 1px 1px #b7b7b7; }
+
+h2 { font-size: 1.5em; font-weight: 700; color: #000d33; padding: 20px 0px 0px 0px; text-align: center; }
+
+
+h3 { font-size: 1.2em; color: #ffffff; text-shadow: 1px 1px 0px #b7b7b7; }
+
+h4 { font-size: 1em; font-weight: 400; color: #ffffff;} 
+
+h5 { font-size: 1.3em; font-weight: 700; color: #000d33; padding: 0px; text-align: left; }
+
+label { float: left; width: 6em; margin: 0px; }
+
+input[type="text"], input[type="email"]{ width: 15em; margin-left: 20px; margin-bottom: 5px;} 
+
+a.btn { font-size: 1.2em; text-decoration: none; color: #ffffff; border: 2px solid #ffffff; 
+        padding: 4px; float: left; transition: background-color .5s; }
+
+a.btn:hover { background-color: rgba(0,0,0,.3);}
+
+
+/* Section all */
+section { padding: 0 30px; background-color: #93e400; }
+
+/*Section main */
+
+input[type=text] {
+    width: 50%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password] {
+    width: 50%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+section.main { margin: 0; padding-top: 30px; background: #93e400 no-repeat top left; height: 100%; color: #000d33; }
+
+section.main p { margin: 0; padding: 0; color: #000000; }
+
+section.main aside .content { width: 25%; padding-right: 25px; padding-top: 20px; float: right; text-align: left; }
+
+section.main aside .a.btn { font-size: 1.2em; text-decoration: none; color: #ffffff; border: 2px solid #ffffff; 
+                            padding: 4px 25px; float: right; transition: background-color .5s; }
+
+a.btn:hover { background-color: rgba(0,0,0,.3);}
+
+.mySlides { display: none; margin: 25px;}
+
+/*Section Bottom*/
+section.bottom { margin: 20px 0 0 0; padding: 20px 0px; color: #ffffff;  }
+
+section.bottom .address { margin: 20px; width: 33%; background: #93e400 no-repeat center top; 
+                          text-align: left; color: #ffffff; }
+
+section.bottom a { color: #595959; }
+section.bottom a:visited { color: #b7b7b7; }
+section.bottom a:hover { color: #000000; }
+
+/* Navigation */
+
+nav { background-color: #f0e9e5; position: absolute; width: 100%; }
+
+nav::after { content: ''; display: block; clear: both; }
+
+nav ul{ list-style: none; margin: 0; padding: 0px 15px; }
+
+nav ul li a { display: inline-block; color:#000d33; padding: 10px 30px; text-decoration: none;
+              font-size: 1.2em; text-transform: uppercase; width: 25%; position: relative; }
+
+nav ul li a:visited { color:#93e400; }
+nav ul li a:hover { background-color: #006fb8; color: #33000d; }
+
+
+
+/* Top-level Nav */
+
+nav > ul { padding-left: 30px; }
+nav > ul > li { float: left; padding: 0px 20px; }
+nav > ul > li > a { width: 100%; padding: 5px 30px; }
+
+

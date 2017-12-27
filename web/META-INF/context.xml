@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/Technician">
+<Realm className="org.apache.catalina.realm.LockOutRealm" debug="99"
+           driverName="com.mysql.jdbc.Driver"
+           connectionURL="jdbc:mysql://localhost:3306/techtracker"
+           connectionName="root" connectionPassword="sesame"
+           userTable="tech" userNameCol="lastName" userCredCol="password" />
+</Context>

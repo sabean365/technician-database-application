@@ -1,0 +1,94 @@
+<!--
+This is the header element for all web pages for Technician Tracker
+© November 11, 2017 Sarah Bean
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="Technician Tracker">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" media="all" href="stylesheet/techTrack.css">
+        <title>Technician Tracker: Open Work Orders</title>
+    </head>
+
+    <body>
+        <header>
+            <a class="logo" title="Technician Tracker" href="#"></a>
+        </header>      
+
+<nav>
+    <ul>
+        <li><a href="index.jsp">HOME</a></li>
+        <li><a href="login.jsp">LOGIN</a></li>
+        <li><a href="accountActivity.jsp">TRACKER</a></li>
+        <li><a href="register.jsp">REGISTER</a></li>
+        <li><a href="newReqs.jsp">NEW REQUEST</a></li>
+    </ul>
+
+</nav>
+
+<section class=main>
+    <h2>WELCOME TO TECHNICIAN TRACKER</h2>
+    <aside>
+        <div class="content">
+            <h3>USER LOGIN</h3>
+            <p>Click below to login<br>to your account.</p>
+            <a class="btn" title="Login" href="login.jsp">LOGIN</a><br/><br/>           
+
+        </div>
+    </aside>
+
+    <div class="w3-content">
+        <img class="mySlides"  
+             src="images/techTracker1.jpg"
+             alt="Male System Administrator">
+        <img class="mySlides" 
+             src="images/techTracker2.jpg"
+             alt="Female System Administrator">
+        <img class="mySlides" 
+             src="images/techTracker3.jpg"
+             alt="Desktop Support">
+        <img class="mySlides" 
+             src="images/techTracker4.jpg"
+             alt="Desktop Training Male/Female">
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+    </script>
+    <h5><i>LOGIN TO TRACK OPEN WORK ITEMS</i></h5>
+
+
+</section>
+
+<section class="bottom">
+    <aside>
+        <div class="address">
+            <h4>Technician Tracker<br>
+                222 Central Ave<br> 
+                Saint Petersburg, FL 33701</h4>
+            <span id="desktop">888-555-5555 </span><br>
+            <a href="mailto:contact@techtracker.com">contact@techtracker.com</a><br>
+        </div>
+    </aside>
+</section>
+        
+        <h4>&copy; Copyright 2017 Technician Tracker, Inc.</h4>
+</body>
+</html>
